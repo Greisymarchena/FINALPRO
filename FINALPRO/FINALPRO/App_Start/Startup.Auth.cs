@@ -54,9 +54,9 @@ namespace FINALPRO
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "228989748420449",
+               appSecret: "bb67b5eb041a0325b41a06e91b495624");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
