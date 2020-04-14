@@ -11,11 +11,11 @@ namespace FINALPRO.Controllers
     public class FormularioController : Controller
     {
         // GET: Formulario
-        public ActionResult form()
+        public ActionResult Form()
         { 
             return View(); 
         }
-        public ActionResult mostrar(Formulario form, HttpPostedFileBase foto, HttpPostedFileBase Curriculum)
+        public ActionResult Mostrar(Formulario form, HttpPostedFileBase foto, HttpPostedFileBase Curriculum)
         {
             if (Curriculum.ContentLength > 0)
             {

@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Temperatura";
+}
+    <html>
+    <head>
+
+    </head>
+    <body>
+        <h2>Temperatura</h2>
+        <div>
+
+            <input class="" type="number" name="Numero" id="Numero" />
+            <select class="" id="select1">
+                <option value="1">Celcius</option>
+                <option value="2">Farenheit</option>
+                <option value="3">Kelvin</option>
+            </select>
+
+        </div>
+        <br />
+
+        <div>
+
+            <input class="" type="text" name="Resultado" id="Resultado" readonly />
+            <select class="" id="select2">
+                <option value="1">Celcius</option>
+                <option value="2">Farenheit</option>
+                <option value="3">Kelvin</option>
+            </select>
+
+        </div>
+        <br />
+     
+
+        
+
+            <input class="" type="button" name="Convertir" id="Convertir" value="Convertir" />
+
+      
+    </body>
+</html>
+
+@section Scripts{
+    
+    <script>
+        $("#Convertir").click(function () {
+
+            var num = $("#Numero").val();
+
+            var O1 = $('#select1').val()
+            var O2 = $('#select2').val()
+
+            var r = 0;
+
+            if (O1 == 1 && O2 == 1) {
+                r = num;
+                $("#Resultado").val(r);
+            }
+            else if (O1 == 1 && O2 == 2) {
+                r = (num * 9 / 5) + 35;
+
+                $("#Resultado").val(r);
+            }
+            else if (O1 == 1 && O2 == 3) {
+                r = 273.15 + parseInt(num);
+                $("#Resultado").val(r);
+            }
+            else if (O1 == 2 && O2 == 1) {
+                r = (num - 32) * 5 / 9;
+                $("#Resultado").val(r);
+            }
+            else if (O1 == 2 && O2 == 2) {
+                r = num;
+                $("#Resultado").val(r);
+            }
+            else if (O1 == 2 && O2 == 3) {
+                r = (num - 32) * 5 / 9 + 273.15;
+                $("#Resultado").val(r);
+            }
+            else if (O1 == 3 && O2 == 1) {
+                r = num - 273.15;
+                $("#Resultado").val(r);
+            }
+            else if (O1 == 3 && O2 == 2) {
+                r = (num - 273.15) * 9 / 5 + 32;
+                $("#Resultado").val(r);
+            }
+            else if (O1 == 3 && O2 == 3) {
+                r = num;
+                $("#Resultado").val(r);
+            }
+        });
+    </script>
+    }

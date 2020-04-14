@@ -1,0 +1,198 @@
+﻿
+@{
+    ViewBag.Title = "Datos";
+}
+
+<h2>Datos</h2>
+<div>
+
+    <input class="" type="number" name="Numero" id="Numero" />
+    <select class="" id="select1">
+        <option value="1">Bit</option>
+        <option value="2">Byte</option>
+        <option value="3">Kilobyte</option>
+        <option value="4">Megabyte</option>
+        <option value="5">Gigabyte</option>
+        <option value="6">Terabyte</option>
+    </select>
+
+</div>
+<br />
+
+<div>
+
+    <input class="" type="text" name="resultado" id="resultado" readonly />
+    <select class="" id="select2">
+        <option value="1">Bit</option>
+        <option value="2">Byte</option>
+        <option value="3">Kilobyte</option>
+        <option value="4">Megabyte</option>
+        <option value="5">Gigabyte</option>
+        <option value="6">Terabyte</option>
+    </select>
+
+</div>
+<br />
+
+
+    <input class="" type="button" name="Convertir" id="Convertir" value="Convertir" />
+
+@section Scripts{
+    <script>
+        $("#Convertir").click(function () {
+
+            var num = $("#Numero").val();
+
+            var O1 = $('#select1').val()
+            var O2 = $('#select2').val()
+
+            var r = 0;
+            parseInt(num);
+            if (O1 == 1 && O2 == 1) {
+                r = num;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 1 && O2 == 2) {
+                r = num / 8;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 1 && O2 == 3) {
+                r = num / 8000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 1 && O2 == 4) {
+                r = num / 8000000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 1 && O2 == 5) {
+                r = num / 8000000000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 1 && O2 == 6) {
+                r = num / 8000000000000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 2 && O2 == 1) {
+                r = num * 8;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 2 && O2 == 2) {
+                r = num;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 2 && O2 == 3) {
+                r = num / 1000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 2 && O2 == 4) {
+                r = num / 1000000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 2 && O2 == 5) {
+                r = num / 1000000000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 2 && O2 == 6) {
+                r = num / 1000000000000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 3 && O2 == 1) {
+                r = num * 8000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 3 && O2 == 2) {
+                r = num * 1000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 3 && O2 == 3) {
+                r = num;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 3 && O2 == 4) {
+                r = num / 1000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 3 && O2 == 5) {
+                r = num / 1000000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 3 && O2 == 6) {
+                r = num / 1000000000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 4 && O2 == 1) {
+                r = num * 8000000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 4 && O2 == 2) {
+                r = num * 1000000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 4 && O2 == 3) {
+                r = num * 1000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 4 && O2 == 4) {
+                r = num;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 4 && O2 == 5) {
+                r = num / 1000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 4 && O2 == 6) {
+                r = num / 1000000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 5 && O2 == 1) {
+                r = num * 8000000000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 5 && O2 == 2) {
+                r = num * 1000000000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 5 && O2 == 3) {
+                r = num * 1000000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 5 && O2 == 4) {
+                r = num * 1000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 5 && O2 == 5) {
+                r = num;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 5 && O2 == 6) {
+                r = num / 1000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 6 && O2 == 1) {
+                r = num * 8000000000000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 6 && O2 == 2) {
+                r = num * 1000000000000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 6 && O2 == 3) {
+                r = num * 1000000000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 6 && O2 == 4) {
+                r = num * 1000000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 6 && O2 == 5) {
+                r = num * 1000;
+                $("#resultado").val(r);
+            }
+            else if (O1 == 6 && O2 == 6) {
+                r = num;
+                $("#resultado").val(r);
+            }
+        });
+
+    </script>
+    }

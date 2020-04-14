@@ -9,26 +9,26 @@ namespace FINALPRO.Models
     public class Formulario
     {
         [Key]
-        public int id { get; set; }
+        public int Id { get; set; }
 
         [Required]
-        public String cedula { get; set; }
+        public String Cedula { get; set; }
 
         [Required]
-        public String nombre { get; set; }
+        public String Nombre { get; set; }
 
         [Required]
-        public String apellido { get; set; }
+        public String Apellido { get; set; }
 
         [Range(16, 100)]
-        public int edad { get; set; }
-        public String telefono { get; set; }
+        public int Edad { get; set; }
+        public String Telefono { get; set; }
 
         [EmailAddress]
-        public String correo { get; set; }
-        public bool genero { get; set; }
-        public String puesto { get; set; }
-        public String foto { get; set; }
-        public String curriculum { get; set; }
+        public String Correo { get; set; }
+        public bool Genero { get; set; }
+        public String Puesto { get; set; }
+        public String Foto { get; set; }
+        public String Curriculum { get; set; }
     }
 }
