@@ -33,5 +33,9 @@ namespace FINALPRO.Controllers
             }
             return View(form);
         }
+        public ActionResult Acerca()
+        {
+            return View();
+        }
     }
 }

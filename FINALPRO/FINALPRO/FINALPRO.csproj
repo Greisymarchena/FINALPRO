@@ -250,13 +250,18 @@
     <Content Include="Views\Convertidores\Masa.cshtml" />
     <Content Include="Views\Convertidores\Datos.cshtml" />
     <Content Include="Views\Excel\Subida.cshtml" />
+    <Content Include="Views\FiltroContenido\Musica.cshtml" />
+    <Content Include="Views\FiltroContenido\Noticias.cshtml" />
+    <Content Include="Views\FiltroContenido\AccionAventura.cshtml" />
+    <Content Include="Views\FiltroContenido\Drama.cshtml" />
+    <Content Include="Views\FiltroContenido\Infantiles.cshtml" />
+    <Content Include="Views\FiltroContenido\Documentales.cshtml" />
+    <Content Include="Views\Formulario\Acerca.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="img\" />
     <Folder Include="pdf\" />
-    <Folder Include="Views\Default\" />
-    <Folder Include="Views\FiltroContenido\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
