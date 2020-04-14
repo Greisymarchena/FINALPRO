@@ -1,0 +1,25 @@
+﻿@model FINALPRO.Models.Formulario
+
+@{
+    ViewBag.Title = "mostrar";
+}
+
+<h2>mostrar</h2>
+Cedula: @Model.cedula
+<br />
+Nombre: @Model.nombre
+<br />
+Apellido: @Model.apellido
+<br />
+Edad: @Model.edad
+<br />
+Correo: @Model.correo
+<br />
+Genero: @Model.genero
+<br />
+Puesto: @Model.puesto
+<br />
+<a href="~/pdf/@ViewBag.Curriculum">@ViewBag.Curriculum</a>
+<br />
+<img src="~/img/@ViewBag.foto" style="width:380px;height:500px;" />
+

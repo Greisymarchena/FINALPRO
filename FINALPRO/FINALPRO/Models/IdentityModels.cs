@@ -29,5 +29,7 @@ namespace FINALPRO.Models
         {
             return new ApplicationDbContext();
         }
+
+        //public System.Data.Entity.DbSet<FINALPRO.Models.Formulario> Formularios { get; set; }
     }
 }
